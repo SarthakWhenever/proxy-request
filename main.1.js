@@ -10,7 +10,6 @@ function proxy_request(url,opt,callback,error,def_heads){
     if (def_heads!=false){
         opt.headers["User-agent"] = navigator&&navigator.userAgent;
     }
-    alert(opt.url)
     _request(proxy,{
         method:"POST",
         body:JSON.stringify({
